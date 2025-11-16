@@ -1,0 +1,198 @@
+.top-lecteurs {
+  padding: 40px 20px;
+  background: #f8fafc;
+}
+
+.top-lecteurs-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.lecteurs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.lecteur-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: auto auto 1fr auto;
+  gap: 15px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.lecteur-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-color: #3b82f6;
+}
+
+.lecteur-card.top-lecteur {
+  background: #fbbf24;
+  color: white;
+  border: 2px solid #f59e0b;
+  box-shadow: 0 6px 15px rgba(251, 191, 36, 0.25);
+}
+
+.lecteur-card.top-lecteur .lecteur-nom,
+.lecteur-card.top-lecteur .lecteur-lectures,
+.lecteur-card.top-lecteur .rank-number,
+.lecteur-card.top-lecteur .progression-text {
+  color: white;
+}
+
+.lecteur-card.top-lecteur .progression-bar {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.lecteur-card.top-lecteur .progression-fill {
+  background: white;
+}
+
+.lecteur-rank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.rank-number {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.rank-badge {
+  font-size: 1.1rem;
+  color: #fbbf24;
+}
+
+.lecteur-avatar {
+  position: relative;
+}
+
+.avatar-circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #3b82f6;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.top-lecteur .avatar-circle {
+  background: #1e3a8a;
+  border: 3px solid white;
+}
+
+.lecteur-info {
+  flex: 1;
+}
+
+.lecteur-nom {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin-bottom: 2px;
+}
+
+.lecteur-lectures {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.lecteur-lectures strong {
+  color: #3b82f6;
+  font-size: 0.95rem;
+}
+
+.lecteur-progression {
+  width: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.progression-bar {
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progression-fill {
+  height: 100%;
+  background: #3b82f6;
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progression-text {
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.champion-highlight {
+  background: #fbbf24;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.2);
+  border: 2px solid #f59e0b;
+}
+
+.champion-icon {
+  font-size: 1.5rem;
+}
+
+.champion-highlight p {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .lecteur-card {
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+  }
+
+  .lecteur-rank {
+    grid-row: 1 / 3;
+  }
+
+  .lecteur-avatar {
+    grid-column: 2;
+  }
+
+  .lecteur-info {
+    grid-column: 2;
+  }
+
+  .lecteur-progression {
+    grid-column: 1 / 3;
+    width: 100%;
+  }
+
+  .champion-highlight {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,120 @@
+.domaines {
+  padding: 80px 20px;
+  background: #f8fafc;
+}
+
+.domaines-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.domaines-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 1200px) {
+  .domaines-grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+  }
+}
+
+@media (max-width: 968px) {
+  .domaines-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.domaine-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.domaine-card:hover {
+  transform: translateY(-10px);
+  border-color: #3b82f6;
+}
+
+.domaine-icon {
+  font-size: 3.5rem;
+  color: #3b82f6;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.domaine-card:hover .domaine-icon {
+  color: #1e3a8a;
+  transform: scale(1.1);
+}
+
+.domaine-title {
+  font-size: 1.4rem;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.domaine-description {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .domaines-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .domaine-card {
+    padding: 25px 15px;
+  }
+
+  .domaine-icon {
+    font-size: 2.5rem;
+  }
+
+  .domaine-title {
+    font-size: 1.1rem;
+  }
+
+  .domaine-description {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .domaines-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

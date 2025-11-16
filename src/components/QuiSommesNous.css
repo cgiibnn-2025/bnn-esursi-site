@@ -1,0 +1,296 @@
+.qui-sommes-nous {
+  padding: 80px 0;
+  background: white;
+}
+
+.qui-sommes-nous-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 0;
+  align-items: stretch;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+/* Texte à gauche */
+.text-content {
+  animation: fadeInLeft 0.8s ease-out;
+  background: #1e3a8a;
+  padding: 60px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+  margin-top: 0;
+  font-weight: 700;
+
+  position: relative;
+  padding-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: #fbbf24;
+  border-radius: 2px;
+}
+
+.intro-text {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.intro-text strong {
+  color: #fbbf24;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #3b82f6;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.missions-list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+}
+
+.missions-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #334155;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.missions-list li:hover {
+  border-left-color: #3b82f6;
+  transform: translateX(10px);
+}
+
+.check-icon {
+  color: #10b981;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.stats-mini {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 25px 15px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.stat-item:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: #fbbf24;
+  transform: translateY(-5px);
+}
+
+.stat-item h4 {
+  font-size: 2.5rem;
+  color: #fbbf24;
+  margin-bottom: 8px;
+  font-weight: 800;
+}
+
+.stat-item p {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Image à droite */
+.image-content {
+  animation: fadeInRight 0.8s ease-out;
+  display: flex;
+  align-items: stretch;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.image-wrapper:hover {
+  transform: scale(1.02);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(30, 58, 138, 0.95), transparent);
+  padding: 30px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.image-wrapper:hover .image-overlay {
+  transform: translateY(0);
+}
+
+.overlay-text {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .text-content {
+    padding: 40px 30px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .stats-mini {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+
+  .stat-item {
+    padding: 20px 10px;
+  }
+
+  .stat-item h4 {
+    font-size: 2rem;
+  }
+
+  .stat-item p {
+    font-size: 0.85rem;
+  }
+
+  .image-wrapper img {
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .qui-sommes-nous {
+    padding: 60px 0;
+  }
+
+  .qui-sommes-nous-container {
+    padding: 0 10px;
+  }
+
+  .text-content {
+    padding: 30px 20px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .intro-text,
+  .description {
+    font-size: 1rem;
+  }
+
+  .stats-mini {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .stat-item h4 {
+    font-size: 2rem;
+  }
+
+  .image-wrapper img {
+    min-height: 300px;
+  }
+}
