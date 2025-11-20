@@ -10,15 +10,17 @@ const QuiSommesNous = () => {
           <div className="text-content">
             <h2 className="section-title" style={{color:"white"}}>Qui sommes nous</h2>
             <p className="intro-text">
-              La <strong>Bibliothèque Numérique Nationale (BNN)</strong> est une plateforme innovante dédiée à 
-              la démocratisation de l'accès au savoir en République Démocratique du Congo. Notre mission est de 
-              fournir un accès gratuit et illimité aux ressources académiques et scientifiques pour tous.
+              La <strong>Cellule de Gestion des Infrastructures Informatiques et de la Bibliothèque Numérique Nationale 
+              du Ministère de l'Enseignement Supérieur, Universitaire, Recherche Scientifique et Innovation (CGIIBNN-MINESURSI)</strong> 
+              est une structure spécialisée dédiée à la gestion des infrastructures technologiques et à la démocratisation 
+              de l'accès au savoir en République Démocratique du Congo.
             </p>
             <p className="description">
-              Nous mettons à disposition des milliers d'ouvrages, articles scientifiques, thèses et documents 
-              pédagogiques couvrant tous les domaines du savoir. Notre plateforme s'adresse aux étudiants, 
-              enseignants, chercheurs et à toute personne désireuse d'approfondir ses connaissances et de 
-              contribuer au développement scientifique et académique du pays.
+              Notre mission est de fournir un accès gratuit et illimité aux ressources académiques et scientifiques pour tous. 
+              Nous mettons à disposition des milliers d'ouvrages, articles scientifiques, thèses et documents pédagogiques 
+              couvrant tous les domaines du savoir. Notre plateforme s'adresse aux étudiants, enseignants, chercheurs et à 
+              toute personne désireuse d'approfondir ses connaissances et de contribuer au développement scientifique et 
+              académique du pays.
             </p>
 
             <div className="stats-mini">
