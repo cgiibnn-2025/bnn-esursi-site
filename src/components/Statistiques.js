@@ -16,7 +16,7 @@ const Statistiques = () => {
         const dateDebut = `${year}-01-01`;
         const dateFin = `${year}-12-31`;
         
-        const response = await fetch(`http://localhost:8000/api/bnn/statistiques/?date_debut=${dateDebut}&date_fin=${dateFin}`);
+        const response = await fetch(`https://admin.cgiibnn-esursi.cd/api/bnn/statistiques/?date_debut=${dateDebut}&date_fin=${dateFin}`);
         const data = await response.json();
         
         setStatsData(data);
@@ -247,3 +247,10 @@ const Statistiques = () => {
 };
 
 export default Statistiques;
+
+
+
+
+
+// XvSHNUw3HHK8czk3
+
