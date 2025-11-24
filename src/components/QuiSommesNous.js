@@ -12,7 +12,7 @@ const QuiSommesNous = () => {
             <p className="intro-text">
               La <strong>Cellule de Gestion des Infrastructures Informatiques et de la Bibliothèque Numérique Nationale 
               du Ministère de l'Enseignement Supérieur, Universitaire, Recherche Scientifique et Innovation (CGIIBNN-MINESURSI)</strong> 
-              est une structure spécialisée dédiée à la gestion des infrastructures technologiques et à la démocratisation 
+               est une structure spécialisée dédiée à la gestion des infrastructures technologiques et à la démocratisation 
               de l'accès au savoir en République Démocratique du Congo.
             </p>
             <p className="description">

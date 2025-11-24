@@ -16,54 +16,44 @@ import './Domaines.css';
 const Domaines = () => {
   const domaines = [
     {
-      icon: <BsLightbulb />,
-      title: "Sciences",
-      description: "Physique, Chimie, Biologie et sciences fondamentales"
-    },
-    {
-      icon: <BsBook />,
-      title: "Lettres",
-      description: "Littérature, Langues, Philosophie et Sciences humaines"
+      icon: <BsPalette />,
+      title: "Lettres, Langues et Arts",
+      description: "Ce domaine explore la littérature, les langues, les cultures et les pratiques artistiques. Il développe la créativité, l'expression, l'analyse critique et la compréhension des œuvres humaines."
     },
     {
       icon: <BsHeartPulse />,
-      title: "Médecine",
-      description: "Sciences médicales, Pharmacie et Sciences de la santé"
-    },
-    {
-      icon: <BsShield />,
-      title: "Droit",
-      description: "Sciences juridiques, Droit public et privé"
-    },
-    {
-      icon: <BsGraphUp />,
-      title: "Économie",
-      description: "Gestion, Économie, Finance et Commerce"
-    },
-    {
-      icon: <BsGear />,
-      title: "Ingénierie",
-      description: "Génie civil, Mécanique, Électrique et Industriel"
-    },
-    {
-      icon: <BsPeople />,
-      title: "Pédagogie",
-      description: "Sciences de l'éducation et Formation des enseignants"
+      title: "Sciences de la Santé",
+      description: "Elles regroupent les disciplines liées à la médecine, aux soins infirmiers, à la pharmacie et à la santé publique. Ce domaine forme des professionnels capables d'améliorer la santé et le bien-être des populations."
     },
     {
       icon: <BsTree />,
-      title: "Agriculture",
-      description: "Agronomie, Vétérinaire et Développement rural"
+      title: "Sciences Agronomiques et Environnement",
+      description: "Ce domaine traite de l'agriculture, de l'élevage, de la gestion durable des ressources naturelles et de la protection de l'environnement. Il contribue à la sécurité alimentaire et à la préservation de l'écosystème."
     },
     {
-      icon: <BsPalette />,
-      title: "Arts",
-      description: "Beaux-arts, Musique, Théâtre et Arts appliqués"
+      icon: <BsPeople />,
+      title: "Sciences de l'Homme et de la Société",
+      description: "Il regroupe les disciplines qui analysent les comportements humains, les cultures, les interactions sociales et les dynamiques communautaires. Ce domaine aide à comprendre et résoudre les enjeux sociétaux."
+    },
+    {
+      icon: <BsGraphUp />,
+      title: "Sciences Économiques et de Gestion",
+      description: "Ce domaine étudie la production, la distribution des richesses, le management et la gouvernance des organisations. Il forme des experts capables d'analyser les marchés et de piloter la performance économique."
     },
     {
       icon: <BsCpu />,
-      title: "Technologies",
-      description: "Informatique, Télécommunications et Numérique"
+      title: "Sciences et Technologies",
+      description: "Il couvre les domaines de la physique, de la chimie, des mathématiques, de l'informatique et des innovations techniques. Ce secteur développe les compétences nécessaires pour concevoir des solutions technologiques."
+    },
+    {
+      icon: <BsShield />,
+      title: "Sciences Juridiques, Politiques et Administratives",
+      description: "Ce domaine analyse le droit, les institutions, la gouvernance et les politiques publiques. Il forme des professionnels capables d'assurer la justice, l'administration efficace et la gestion publique."
+    },
+    {
+      icon: <BsLightbulb />,
+      title: "Sciences Psychologiques et de l'Éducation",
+      description: "Il étudie les comportements, les processus mentaux et les méthodes pédagogiques. Ce domaine prépare à accompagner le développement humain, l'apprentissage et le bien-être psychologique."
     }
   ];
 
@@ -72,7 +62,7 @@ const Domaines = () => {
       <div className="domaines-container">
         <h2 className="section-title">Domaines d'Enseignement Supérieur</h2>
         <p className="section-subtitle">
-          Découvrez les ressources disponibles dans les 10 domaines de l'enseignement supérieur en RDC
+          Découvrez les ressources disponibles dans les 8 domaines de l'enseignement supérieur en RDC
         </p>
         
         <div className="domaines-grid">
