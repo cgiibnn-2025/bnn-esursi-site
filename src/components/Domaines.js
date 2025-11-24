@@ -67,8 +67,10 @@ const Domaines = () => {
           {domaines.map((domaine, index) => (
             <div key={index} className="domaine-card">
               <div className="domaine-icon">{domaine.icon}</div>
-              <h3 className="domaine-title">{domaine.title}</h3>
-              <p className="domaine-description">{domaine.description}</p>
+              <div className="domaine-content">
+                <h3 className="domaine-title">{domaine.title}</h3>
+                <p className="domaine-description">{domaine.description}</p>
+              </div>
             </div>
           ))}
         </div>

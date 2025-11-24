@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { BsEnvelope, BsPhone, BsGeoAlt, BsFacebook, BsTwitter, BsLinkedin, BsYoutube } from 'react-icons/bs';
+import { BsEnvelope, BsPhone, BsGeoAlt, BsFacebook, BsTwitter, BsLinkedin, BsYoutube, BsXCircle } from 'react-icons/bs';
 import './Footer.css';
 import logoBlanc from '../assets/Logoblanc.png';
 
 const Footer = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
   const handleNavClick = (e, sectionId) => {
     e.preventDefault();
+    if (sectionId === 'apropos') {
+      setModalOpen(true);
+      return;
+    }
     if (location.pathname !== '/') {
       navigate('/');
       setTimeout(() => {
@@ -94,6 +99,29 @@ const Footer = () => {
           </p>
         </div>
       </div>
+
+      {modalOpen && (
+        <div className="modal-overlay" onClick={() => setModalOpen(false)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={() => setModalOpen(false)}>
+              <BsXCircle />
+            </button>
+            <h2>À propos de la CGIIBNN-MINESURSI</h2>
+            <div className="modal-body">
+              <p>
+                La <strong>Cellule de Gestion des Infrastructures Informatiques et de la Bibliothèque Numérique Nationale</strong> est une structure du Ministère de l'Enseignement Supérieur et Universitaire chargée de développer, gérer et sécuriser les outils numériques utilisés dans les établissements de l'ESU.
+              </p>
+              <p>
+                Elle met en place les plateformes et réseaux informatiques, assure leur bon fonctionnement et veille à offrir aux étudiants, enseignants et chercheurs un accès facile aux ressources numériques.
+                À travers la Bibliothèque Numérique Nationale, elle facilite la consultation des documents académiques et scientifiques en ligne.
+              </p>
+              <p>
+                Son objectif est de moderniser le système éducatif congolais grâce à des solutions technologiques fiables, accessibles et adaptées aux besoins de la communauté universitaire.
+              </p>
+            </div>
+          </div>
+        </div>
+      )}
     </footer>
   );
 };
