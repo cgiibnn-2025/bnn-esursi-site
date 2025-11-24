@@ -1,10 +1,8 @@
 import React from 'react';
 import { 
-  BsBook, 
   BsHeartPulse, 
   BsShield, 
-  BsGraphUp, 
-  BsGear,
+  BsGraphUp,
   BsPeople,
   BsTree,
   BsPalette,
