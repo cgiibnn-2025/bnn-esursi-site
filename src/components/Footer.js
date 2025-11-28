@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="footer-contact">
               <p>
                 <BsEnvelope className="contact-icon" />
-                contact@cgiibnn-esursi.cd
+                cgiibnnesursi@gmail.com
               </p>
               <p>
                 <BsPhone className="contact-icon" />

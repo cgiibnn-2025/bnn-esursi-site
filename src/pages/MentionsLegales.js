@@ -20,7 +20,7 @@ const MentionsLegales = () => {
             <p><strong>Acronyme :</strong> CGIIBNN-ESURSI</p>
             <p><strong>Statut juridique :</strong> Service public sous tutelle du Ministère de l'ESURSI</p>
             <p><strong>Adresse :</strong> KINSHASA GOMBE, Av. de l'hopital</p>
-            <p><strong>Email :</strong> contact@cgiibnn-esursi.cd</p>
+            <p><strong>Email :</strong> cgiibnnesursi@gmail.com</p>
             <p><strong>Téléphone :</strong> +243 99 980 886</p>
           </div>
         </section>
@@ -174,7 +174,7 @@ const MentionsLegales = () => {
             Pour signaler tout contenu illicite, violation de droits d'auteur ou comportement inapproprié :
           </p>
           <div className="contact-info">
-            <p><strong>Email :</strong> contact@cgiibnn-esursi.cd</p>
+            <p><strong>Email :</strong> cgiibnnesursi@gmail.com</p>
             <p><strong>Objet :</strong> [SIGNALEMENT] Description brève</p>
             <p>Merci de fournir un maximum de détails pour traiter rapidement votre demande.</p>
           </div>
@@ -184,7 +184,7 @@ const MentionsLegales = () => {
           <h2>14. Contact</h2>
           <p>Pour toute question concernant ces mentions légales ou pour exercer vos droits :</p>
           <div className="contact-info">
-            <p><strong>Email :</strong> contact@cgiibnn-esursi.cd</p>
+            <p><strong>Email :</strong> cgiibnnesursi@gmail.com</p>
             <p><strong>Adresse :</strong> KINSHASA GOMBE, Av. de l'hopital</p>
             <p><strong>Téléphone :</strong> +243 99 980 886</p>
           </div>

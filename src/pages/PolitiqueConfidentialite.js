@@ -148,7 +148,7 @@ const PolitiqueConfidentialite = () => {
           <h2>10. Contact</h2>
           <p>Pour toute question concernant cette politique de confidentialité :</p>
           <div className="contact-info">
-            <p><strong>Email :</strong> contact@cgiibnn-esursi.cd</p>
+            <p><strong>Email :</strong> cgiibnnesursi@gmail.com</p>
             <p><strong>Adresse :</strong> KINSHASA GOMBE, Av. de l'hopital</p>
             <p><strong>Téléphone :</strong> +243 99 980 886</p>
           </div>

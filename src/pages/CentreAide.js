@@ -25,7 +25,7 @@ const CentreAide = () => {
         },
         {
           q: "Comment supprimer mon compte ?",
-          a: "Pour supprimer votre compte, contactez-nous à contact@cgiibnn-esursi.cd avec votre demande. Notez que cette action est irréversible et toutes vos données seront supprimées."
+          a: "Pour supprimer votre compte, contactez-nous à cgiibnnesursi@gmail.com avec votre demande. Notez que cette action est irréversible et toutes vos données seront supprimées."
         }
       ]
     },
@@ -93,7 +93,7 @@ const CentreAide = () => {
       questions: [
         {
           q: "Le site ne se charge pas, que faire ?",
-          a: "Vérifiez votre connexion internet. Videz le cache de votre navigateur (Ctrl+Shift+Del). Essayez un autre navigateur (Chrome, Firefox, Safari). Si le problème persiste, contactez contact@cgiibnn-esursi.cd"
+          a: "Vérifiez votre connexion internet. Videz le cache de votre navigateur (Ctrl+Shift+Del). Essayez un autre navigateur (Chrome, Firefox, Safari). Si le problème persiste, contactez cgiibnnesursi@gmail.com"
         },
         {
           q: "Je ne peux pas télécharger un document",
@@ -101,7 +101,7 @@ const CentreAide = () => {
         },
         {
           q: "La recherche ne fonctionne pas correctement",
-          a: "Essayez des termes de recherche différents ou plus simples. Vérifiez l'orthographe. Utilisez les filtres pour affiner. Actualisez la page. Si le problème continue, signalez-le à contact@cgiibnn-esursi.cd"
+          a: "Essayez des termes de recherche différents ou plus simples. Vérifiez l'orthographe. Utilisez les filtres pour affiner. Actualisez la page. Si le problème continue, signalez-le à cgiibnnesursi@gmail.com"
         },
         {
           q: "Je n'arrive pas à me connecter",
@@ -167,20 +167,20 @@ const CentreAide = () => {
 
         {/* Sections d'aide rapide */}
         <div className="quick-help">
-          <div className="help-card">
+          <div className="help-card" onClick={() => document.getElementById('faq-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
             <BsQuestionCircle className="help-icon" />
             <h3>FAQ Complète</h3>
             <p>Consultez nos questions fréquentes ci-dessous</p>
           </div>
-          <div className="help-card">
+          <div className="help-card" onClick={() => document.getElementById('support-section')?.scrollIntoView({ behavior: 'smooth' })} style={{ cursor: 'pointer' }}>
             <BsEnvelope className="help-icon" />
             <h3>Contactez-nous</h3>
-            <p>contact@cgiibnn-esursi.cd</p>
+            <p>cgiibnnesursi@gmail.com</p>
           </div>
         </div>
 
         {/* FAQ par catégories */}
-        <div className="faq-section">
+        <div className="faq-section" id="faq-section">
           {filteredFaqs.map((category, catIndex) => (
             <div key={catIndex} className="faq-category">
               <h2 className="category-title">{category.category}</h2>
@@ -208,14 +208,14 @@ const CentreAide = () => {
         </div>
 
         {/* Contact support */}
-        <section className="legal-section support-section">
+        <section className="legal-section support-section" id="support-section">
           <h2>Besoin d'aide supplémentaire ?</h2>
           <p>Notre équipe de support est disponible pour vous aider.</p>
           
           <div className="support-options">
             <div className="support-card">
               <h3>Email</h3>
-              <p><strong>Contact :</strong> contact@cgiibnn-esursi.cd</p>
+              <p><strong>Contact :</strong> cgiibnnesursi@gmail.com</p>
               <p><strong>Délai de réponse :</strong> 24-48h</p>
             </div>
 
@@ -235,23 +235,23 @@ const CentreAide = () => {
         </section>
 
         {/* Tutoriels */}
-        <section className="legal-section">
+        <section className="legal-section" id="tutorials-section">
           <h2>Tutoriels et Guides</h2>
           <div className="tutorials-grid">
             <div className="tutorial-card">
               <h3>Guide de démarrage rapide</h3>
               <p>Apprenez les bases de la BNN en 5 minutes</p>
-              <a href="#guide" className="tutorial-link">Voir le guide →</a>
+              <a href="#guide-demarrage" className="tutorial-link">Voir le guide →</a>
             </div>
             <div className="tutorial-card">
               <h3>Recherche avancée</h3>
               <p>Maîtrisez les techniques de recherche</p>
-              <a href="#recherche" className="tutorial-link">En savoir plus →</a>
+              <a href="#recherche-avancee" className="tutorial-link">En savoir plus →</a>
             </div>
             <div className="tutorial-card">
               <h3>Application mobile</h3>
               <p>Utilisez la BNN sur votre smartphone</p>
-              <a href="#mobile" className="tutorial-link">Télécharger →</a>
+              <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" className="tutorial-link">Télécharger →</a>
             </div>
             <div className="tutorial-card">
               <h3>Gestion des citations</h3>
