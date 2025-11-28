@@ -12,6 +12,7 @@ import PolitiqueConfidentialite from './pages/PolitiqueConfidentialite';
 import ConditionsUtilisation from './pages/ConditionsUtilisation';
 import MentionsLegales from './pages/MentionsLegales';
 import CentreAide from './pages/CentreAide';
+import Portail from './pages/Portail';
 
 function HomePage() {
   return (
@@ -42,6 +43,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/portail" element={<Portail />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/conditions-utilisation" element={<ConditionsUtilisation />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />

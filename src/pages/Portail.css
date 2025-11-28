@@ -1,0 +1,377 @@
+.portail-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+.portail-header {
+  background: white;
+  padding: 20px 40px;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.back-button-portail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  border: 2px solid #e2e8f0;
+  background: white;
+  cursor: pointer;
+}
+
+.back-button-portail:hover {
+  background: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+  transform: translateX(-5px);
+}
+
+.portail-header h1 {
+  font-size: 2rem;
+  color: #1e3a8a;
+  margin: 0;
+}
+
+.portail-container {
+  display: flex;
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  gap: 0;
+}
+
+/* Menu Drawer Gauche */
+.portail-drawer {
+  width: 280px;
+  background: white;
+  border-right: 1px solid #e2e8f0;
+  height: 100%;
+  position: sticky;
+  top: 80px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-header {
+  padding: 20px;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.drawer-header h2 {
+  font-size: 1.3rem;
+  color: #1e3a8a;
+  margin: 0;
+  font-weight: 700;
+}
+
+.drawer-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.drawer-menu-item {
+  width: 100%;
+  padding: 15px 20px;
+  text-align: left;
+  background: transparent;
+  border: none;
+  color: #334155;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-left: 4px solid transparent;
+  font-size: 0.95rem;
+}
+
+.drawer-menu-item:hover {
+  background: #f1f5f9;
+  color: #3b82f6;
+  border-left-color: #3b82f6;
+}
+
+.drawer-menu-item.active {
+  background: #eff6ff;
+  color: #3b82f6;
+  border-left-color: #3b82f6;
+  font-weight: 600;
+}
+
+.drawer-menu-item svg {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.drawer-menu-item.active svg {
+  transform: translateX(5px);
+}
+
+/* Contenu Principal Droite */
+.portail-content {
+  flex: 1;
+  padding: 40px;
+  background: white;
+  overflow-y: auto;
+}
+
+.content-header {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #3b82f6;
+}
+
+.content-header h2 {
+  font-size: 1.8rem;
+  color: #1e3a8a;
+  margin: 0;
+  font-weight: 700;
+}
+
+.content-body {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.content-description {
+  font-size: 1.1rem;
+  color: #475569;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8fafc;
+  border-left: 4px solid #3b82f6;
+  border-radius: 4px;
+}
+
+.content-placeholder {
+  background: #f1f5f9;
+  padding: 60px 40px;
+  border-radius: 10px;
+  text-align: center;
+  border: 2px dashed #cbd5e1;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-placeholder p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.content-welcome {
+  text-align: center;
+  padding: 80px 40px;
+}
+
+.content-welcome h2 {
+  font-size: 2.2rem;
+  color: #1e3a8a;
+  margin-bottom: 20px;
+}
+
+.content-welcome > p {
+  font-size: 1.1rem;
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.welcome-info {
+  background: #eff6ff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #3b82f6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.welcome-info p {
+  font-size: 1rem;
+  color: #334155;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Scrollbar personnalisée */
+.portail-drawer::-webkit-scrollbar,
+.portail-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.portail-drawer::-webkit-scrollbar-track,
+.portail-content::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.portail-drawer::-webkit-scrollbar-thumb,
+.portail-content::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.portail-drawer::-webkit-scrollbar-thumb:hover,
+.portail-content::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .portail-container {
+    flex-direction: column;
+  }
+
+  .portail-drawer {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    max-height: 200px;
+    position: static;
+  }
+
+  .drawer-menu {
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .drawer-menu-item {
+    width: auto;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .portail-content {
+    padding: 30px 20px;
+  }
+
+  .content-header h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .portail-header {
+    padding: 15px 20px;
+  }
+
+  .portail-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .back-button-portail {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .drawer-menu-item {
+    padding: 12px 15px;
+    font-size: 0.9rem;
+  }
+
+  .portail-content {
+    padding: 20px 15px;
+  }
+
+  .content-description {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .content-placeholder {
+    padding: 40px 20px;
+    min-height: 200px;
+  }
+
+  .content-welcome {
+    padding: 40px 20px;
+  }
+
+  .content-welcome h2 {
+    font-size: 1.5rem;
+  }
+
+  .welcome-info {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .portail-page {
+    padding-top: 70px;
+  }
+
+  .portail-header {
+    padding: 12px 15px;
+  }
+
+  .portail-header h1 {
+    font-size: 1.2rem;
+  }
+
+  .drawer-menu-item {
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+
+  .drawer-menu-item span {
+    display: none;
+  }
+
+  .portail-content {
+    padding: 15px 10px;
+  }
+
+  .content-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .content-description {
+    font-size: 0.95rem;
+  }
+
+  .content-placeholder {
+    padding: 30px 15px;
+  }
+
+  .content-welcome {
+    padding: 30px 15px;
+  }
+
+  .content-welcome h2 {
+    font-size: 1.3rem;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Hero.css';
 import desktopImg from '../assets/desktop.png';
 import tabletImg from '../assets/tablet.png';
@@ -37,7 +38,7 @@ const Hero = () => {
           </p>
           
           <div className="hero-actions">
-            <a href="https://bnn.cgiibnn-esursi.cd/" target="_blank" rel="noopener noreferrer" className="btn btn-primary">S'inscrire</a>
+            <Link to="/portail" className="btn btn-primary">Portail</Link>
             <a href="https://bnn.cgiibnn-esursi.cd/" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Se connecter</a>
           </div>
 

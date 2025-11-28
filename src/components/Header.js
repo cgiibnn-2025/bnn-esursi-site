@@ -47,7 +47,7 @@ const Header = () => {
 
         <div className="header-actions">
           <a href="https://bnn.cgiibnn-esursi.cd/" target="_blank" rel="noopener noreferrer" className="btn-login">Se connecter</a>
-          <a href="https://bnn.cgiibnn-esursi.cd/" target="_blank" rel="noopener noreferrer" className="btn-signup">S'inscrire</a>
+          <Link to="/portail" className="btn-signup">Portail</Link>
         </div>
 
         <button className="menu-toggle" onClick={toggleMenu}>
