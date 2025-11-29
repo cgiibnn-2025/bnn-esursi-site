@@ -1,7 +1,6 @@
 .portail-page {
   min-height: 100vh;
   background: #f8fafc;
-  padding-top: 80px;
   display: flex;
   flex-direction: column;
 }
@@ -78,6 +77,43 @@
   font-weight: 700;
 }
 
+/* Zone de filtrage */
+.drawer-search {
+  padding: 15px 20px;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f8fafc;
+}
+
+.drawer-search .search-icon {
+  position: absolute;
+  left: 30px;
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.drawer-search .search-input {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.drawer-search .search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.drawer-search .search-input::placeholder {
+  color: #94a3b8;
+}
+
 .drawer-menu {
   display: flex;
   flex-direction: column;
@@ -104,10 +140,34 @@
   font-size: 0.95rem;
 }
 
+.menu-item-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+}
+
+.menu-item-icon {
+  font-size: 1.3rem;
+  color: #3b82f6;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.menu-item-title {
+  flex: 1;
+}
+
 .drawer-menu-item:hover {
   background: #f1f5f9;
   color: #3b82f6;
   border-left-color: #3b82f6;
+}
+
+.drawer-menu-item:hover .menu-item-icon {
+  color: #1e3a8a;
+  transform: scale(1.1);
 }
 
 .drawer-menu-item.active {
@@ -225,6 +285,99 @@
   margin: 0;
 }
 
+/* Resource cards styling */
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.resource-card {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+}
+
+.resource-card:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+}
+
+.resource-image {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.resource-image img {
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.resource-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resource-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.resource-description {
+  font-size: 0.95rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0 0 auto 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #3b82f6;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+  transition: gap 0.2s ease;
+}
+
+.resource-card:hover .resource-link {
+  gap: 12px;
+}
+
+.resource-link svg {
+  font-size: 1rem;
+}
+
 /* Scrollbar personnalisée */
 .portail-drawer::-webkit-scrollbar,
 .portail-content::-webkit-scrollbar {
@@ -281,6 +434,11 @@
   .content-header h2 {
     font-size: 1.5rem;
   }
+
+  .resources-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -326,6 +484,16 @@
 
   .welcome-info {
     max-width: 100%;
+  }
+
+  .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .resource-card {
+    height: auto;
+    min-height: 350px;
   }
 }
 
@@ -373,5 +541,26 @@
 
   .content-welcome h2 {
     font-size: 1.3rem;
+  }
+
+  .resource-image {
+    height: 120px;
+  }
+
+  .resource-content {
+    padding: 15px;
+  }
+
+  .resource-title {
+    font-size: 1rem;
+  }
+
+  .resource-description {
+    font-size: 0.9rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .resource-link {
+    font-size: 0.9rem;
   }
 }

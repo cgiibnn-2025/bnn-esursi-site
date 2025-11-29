@@ -1,0 +1,50 @@
+[
+    {
+        "image": "/images/bonpatron.png",
+        "titre": "BonPatron",
+        "content": "Outil d'orthographe pour améliorer la grammaire et la clarté.",
+        "url": "https://bonpatron.com/"
+    },
+    {
+        "image": "/images/toolslangue.png",
+        "titre": "LanguageTool",
+        "content": "Correcteur multilingue d'orthographe, grammaire et style.",
+        "url": "https://languagetool.org/fr/"
+    },
+    {
+        "image": "/images/plagia.png",
+        "titre": "Vérificateur de plagiat",
+        "content": "Analyse le contenu et signale les duplications éventuelles.",
+        "url": "https://smallseotools.com/plagiarism-checker/"
+    },
+    {
+        "image": "/images/checker.png",
+        "titre": "DupliChecker",
+        "content": "Outil de détection de plagiat pour textes et documents.",
+        "url": "https://www.duplichecker.com/"
+    },
+    {
+        "image": "/images/smallstools.png",
+        "titre": "SmallSEOTools",
+        "content": "Suite d'outils: plagiat, réécriture, analyse et comptage.",
+        "url": "https://smallseotools.com/"
+    },
+    {
+        "image": "/images/planetetude.png",
+        "titre": "SurveyPlanet",
+        "content": "Créer des sondages illimités rapidement et simplement.",
+        "url": "https://surveyplanet.com/"
+    },
+    {
+        "image": "/images/plagscan.png",
+        "titre": "PlagScan",
+        "content": "Détection de plagiat avancée pour documents académiques.",
+        "url": "https://www.plagscan.com/fr/"
+    },
+    {
+        "image": "/images/alertes.png",
+        "titre": "Alertes Google",
+        "content": "Créer des alertes automatiques sur des sujets suivis.",
+        "url": "https://www.google.com/alerts?hl=fr"
+    }
+]
