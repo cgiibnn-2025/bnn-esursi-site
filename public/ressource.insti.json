@@ -1,0 +1,56 @@
+[
+    {
+        "image": "/images/esu.png",
+        "titre": "Ministère de l'Enseignement Supérieur et Universitaire",
+        "content": "Ce site fournit les activités concernant le Ministère de l'Enseignement Supérieur et Universitaire de la République Démocratique du Congo.",
+        "url": "https://minesursi.gouv.cd/"
+    },
+    {
+        "image": "/images/pdt.png",
+        "titre": "Présidence",
+        "content": "Ce site offre toute l'actualité sur la Présidence de la RD Congo",
+        "url": "https://www.presidence.cd/"
+    },
+    {
+        "image": "/images/primature.png",
+        "titre": "Primature",
+        "content": "Ce site fournit les activités concernant le cabinet du Premier Ministre de la RDC.",
+        "url": "https://www.primature.gouv.cd/"
+    },
+    {
+        "image": "/images/senat.png",
+        "titre": "Sénat de la RDC",
+        "content": "Ce site fournit les activités concernant le sénat de la RDC",
+        "url": "https://www.senat.cd/"
+    },
+    {
+        "image": "/fin.png",
+        "titre": "Ministère des Finances",
+        "content": "Ce site fournit les activités concernant le Ministère des Finances de la RDC",
+        "url": "https://finances.gouv.cd/"
+    },  
+    {
+        "image": "/images/bcc.png",
+        "titre": "Banque Centrale du Congo",
+        "content": "Ce site fournit les activités concernant la Banque Centrale du Congo (RDC)",
+        "url": "https://www.bcc.cd/"
+    },
+    {
+        "image": "/images/justice.png",
+        "titre": "Ministère de la Justice",
+        "content": "Ce site fournit les activités concernant le Ministère de la Justice de la RDC",
+        "url": "https://justice.gouv.cd/"
+    },  
+    {
+        "image": "/csm.png",
+        "titre": "Cour suprême de Justice",
+        "content": "Ce site fournit les activités concernant la Cour suprême de Justice de la RDC",
+        "url": "https://www.csm-rdc.cd/"
+    },  
+    {
+        "image": "/images/pdt.png",
+        "titre": "Journal officiel de la RDC",
+        "content": "Le Journal officiel (JO) de la République Démocratique du Congo, est un service spécialisé de la Présidence de la République. Il publie et diffuse les textes législatifs et réglementaires, les ordonnances, les décisions judiciaires, les actes des sociétés, les actes des associations et des partis politiques, des dessins, des modèles industriels, des marques de fabrique ainsi que tout autre acte visé par la Loi.",
+        "url": "https://www.presidence.cd/services/3/journal_officiel"
+    }
+]

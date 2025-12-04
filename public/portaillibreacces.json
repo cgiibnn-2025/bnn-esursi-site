@@ -1,0 +1,73 @@
+[
+    {
+        "image": "public/images/unesco.png",
+        "titre": "UNESCO",
+        "content": "Site de l'organisation des Nations Unies pour l'éducation, la Science et la Culture.",
+        "url": "https://www.unesco.org/fr"
+    },
+
+    {
+        "image": "public/images/eductive.png",
+        "titre": "Éducteur",
+        "content": "Site web éducatif en ligne. Éductive est votre référence pour l'utilisation des technologies en enseignement et en apprentissage au collégial.",
+        "url": "https://eductive.ca/"
+
+    },
+
+    {
+        "image": "public/images/sadc.png",
+        "titre": "Communauté de développement de l'Afrique australe (SADC)",
+        "content": "Ce site fournit les activités concernant la SADC. Les principaux objectifs de la SADC sont de parvenir au développement, à la paix, à la sécurité et à la croissance économique, de réduire la pauvreté, d'améliorer le niveau et la qualité de vie des peuples d'Afrique australe et de soutenir les personnes socialement défavorisées grâce à l'intégration régionale, fondée sur des principes démocratiques et de développement équitable et durable.",
+        "url": "https://www.sadc.int/"
+    },
+    {
+        "image": "public/images/lacipres.png",
+        "titre": "CIPRE.S",
+        "content": "Ce site fournit les activités concernant la Conférence Interafricaine de la Prévoyance Sociale. CIPRES est une organisation intergouvernementale créée en 1972, qui regroupe 14 États africains. Elle a pour mission de promouvoir la sécurité sociale et de renforcer les systèmes de protection sociale dans ses États membres.",
+        "url": "https://lacipres.org/"
+    },
+    {
+        "image": "public/images/senat.png",
+        "titre": "Sénat de la RDC",
+        "content": "Ce site fournit les activités concernant le sénat de la RDC",
+        "url": "https://www.senat.cd/"
+    },
+    {
+        "image": "/fin.png",
+        "titre": "Ministère des Finances",
+        "content": "Ce site fournit les activités concernant le Ministère des Finances de la RDC",
+        "url": "https://finances.gouv.cd/"
+    },
+    {
+        "image": "/images/bcc.png",
+        "titre": "Banque Centrale du Congo",
+        "content": "Ce site fournit les activités concernant la Banque Centrale du Congo (RDC)",
+        "url": "https://www.bcc.cd/"
+    },
+    {
+        "image": "/images/justice.png",
+        "titre": "Ministère de la Justice",
+        "content": "Ce site fournit les activités concernant le Ministère de la Justice de la RDC",
+        "url": "https://justice.gouv.cd/"
+    },
+    {
+        "image": "/csm.png",
+        "titre": "Cour suprême de Justice",
+        "content": "Ce site fournit les activités concernant la Cour suprême de Justice de la RDC",
+        "url": "https://www.csm-rdc.cd/"
+    },
+    {
+        "image": "/images/pdt.png",
+        "titre": "Journal officiel de la RDC",
+        "content": "Le Journal officiel (JO) de la République Démocratique du Congo, est un service spécialisé de la Présidence de la République. Il publie et diffuse les textes législatifs et réglementaires, les ordonnances, les décisions judiciaires, les actes des sociétés, les actes des associations et des partis politiques, des dessins, des modèles industriels, des marques de fabrique ainsi que tout autre acte visé par la Loi.",
+        "url": "https://www.presidence.cd/services/3/journal_officiel"
+    },
+    {
+        "image": "/images/justice.png",
+        "titre": "Ministère de la Justice",
+        "content": "Ce site fournit les activités concernant le Ministère de la Justice de la RDC",
+        "url": "https://justice.gouv.cd/"      
+
+    }
+
+]
